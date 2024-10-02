@@ -11,6 +11,21 @@
       content="black-translucent"
     />
     <link rel="stylesheet" href="./assets/css/style.css?v=" />
+    <style>
+      @media screen and (max-width: 600px) {
+        .speaker-info {
+          flex-direction: column;
+        }
+        .speaker-image {
+          width: 100%;
+          max-width: 300px;
+          margin: 0 auto 1rem;
+        }
+        .speaker-details {
+          width: 100%;
+        }
+      }
+    </style>
   </head>
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
@@ -37,14 +52,15 @@
     <main id="content" class="main-content" role="main">
       <h1 id="call-for-papers">Speakers</h1>
 
-     <table>
-  <tbody>
-
-     <tr>
-        <td><img src="./assets/images/TPloetz_cropped2.jpeg" alt="Thomas Ploetz" width="4000" /></td>
-        <td><a href="https://www.cc.gatech.edu/people/thomas-ploetz">Thomas Ploetz</a><br />Georgia Institute of Technology
-        <p><b>Title:</b> Computational Behavior Analysis for Wellbeing Assessments — Smart Entities (Devices, Algorithms, Humans) are Pushing the Boundaries of Digital Health.</p>
-         <p style="text-align: justify;"><b>Abstract:</b> Many aspects of both mental and physical wellbeing are linked to a human’s behavior and activities, i.e., what a person is doing and when, and how this changes over time. As such, human activity recognition using wearable and other pervasive sensing methods (HAR) is a pillar of mobile and ubiquitous computing based, out-of-clinic wellbeing assessments in various shapes and forms. Alas, recognizing what a person does is—to this day—a non-trivial endeavor due to the underlying analysis of multi-variate, noisy sensor data, which constitutes a formidable machine learning problem that the research community has been tackling.
+      <div class="speaker-info">
+        <div class="speaker-image">
+          <img src="./assets/images/TPloetz_cropped2.jpeg" alt="Thomas Ploetz" style="width: 100%; max-width: 300px;" />
+        </div>
+        <div class="speaker-details">
+          <h2><a href="https://www.cc.gatech.edu/people/thomas-ploetz">Thomas Ploetz</a></h2>
+          <p>Georgia Institute of Technology</p>
+          <p><b>Title:</b> Computational Behavior Analysis for Wellbeing Assessments — Smart Entities (Devices, Algorithms, Humans) are Pushing the Boundaries of Digital Health.</p>
+          <p><b>Abstract:</b> Many aspects of both mental and physical wellbeing are linked to a human’s behavior and activities, i.e., what a person is doing and when, and how this changes over time. As such, human activity recognition using wearable and other pervasive sensing methods (HAR) is a pillar of mobile and ubiquitous computing based, out-of-clinic wellbeing assessments in various shapes and forms. Alas, recognizing what a person does is—to this day—a non-trivial endeavor due to the underlying analysis of multi-variate, noisy sensor data, which constitutes a formidable machine learning problem that the research community has been tackling.
           
           In this talk I will first summarize what makes HAR a hard machine learning problem and then discuss how recent technological breakthroughs can help to get closer to solving it. I will focus on opportunities to overcome data scarcity through cross-modality transfer, and self-supervised learning. I will then delve into some of the wellbeing assessments that my lab has been doing in areas such as Parkinson’s assessment, automated analysis of eating behavior as proxy for mental wellbeing assessments, and recent work in behavior assessments for people with mild cognitive impairments.
             
@@ -54,35 +70,21 @@
           
           Thomas has been very active in the mobile and ubiquitous, including wearable computing community. He is co-editor in chief of the Proc. of the ACM on Interactive, Mobile, Wearable, and Ubiquitous computing technology (IMWUT), has twice been co-chair of the technical program committee of the International Symposium on Wearable Computing (ISWC), and was general co-chair of the 2022 Int. Joint Conf. On Pervasive and Ubiquitous Computing (Ubicomp). Thomas is a Distinguished Member of the ACM. More info <a href="http://thomasploetz.de">here</a>. </p>
 
-      </td>
-    </tr>
+      </div>
 
-    <tr>
-      <td><img src="./assets/images/yuntaowang.png" alt="Yuntao Wang" width="4000" /></td>
-      <td><a href="https://pi.cs.tsinghua.edu.cn/lab/people/YuntaoWang/en/">Yuntao Wang</a><br />Tsinghua University
-      <p><strong>Title</strong>: <b>Enabling Continuous Physiological Sensing on Ubiquitous Devices</b></p>
-       <p style="text-align: justify;"><b>Abstract:</b> Personal health monitoring plays a pivotal role in reflecting lifestyle habits, detecting physical abnormalities, and tracking medical conditions and recovery statuses, thereby offering significant value for overall wellbeing. It is essential for integrating user-friendly and easily accessible healthcare services both inside and outside medical facilities, making it a key research area in human-computer interaction and ubiquitous computing. Traditionally, this field has relied heavily on medical-grade devices to collect physiological data, which are not only costly but also offer limited scalability, thus hindering their widespread use. This presentation will showcase our latest research efforts focused on achieving efficient and continuous physiological sensing with ubiquitous devices. Our goal is to provide new insights and innovative technological approaches within the realm of human-computer interaction for health.</p>
-       <p style="text-align: justify;"><b><strong>Bio</strong>:</b> Yuntao Wang serves as an Associate Professor (Research Track) in the Department of Computer Science and Technology at Tsinghua University in Beijing, China. He is a key member of the Pervasive Interaction Lab, where his research focuses on Human-Computer Interaction (HCI) and Ubiquitous Computing. Dr. Wang specializes on efficient behavioral computing and interaction intention inference on edge devices. He has published more than 70 conference or journal papers including top-tier venues like CHI, IMWUT, UIST and NeurIPS, with seven of these papers earning best paper or honorable mentioned awards. Dr. Wang’s research work has been recognized by the Young Elite Scientists Sponsorship Program by the China Association for Science and Technology (CAST) in 2022, the First Prize of Science and Technology Award of the Chinese Institute of Electronics (CIE) in 2019, the Excellent Innovation Award of the Chinese Association of Artificial Intelligence (CAAI) in 2021. More info <a href="https://pi.cs.tsinghua.edu.cn/lab/people/YuntaoWang/en/">here</a></p>
+      <div class="speaker-info">
+        <div class="speaker-image">
+          <img src="./assets/images/yuntaowang.png" alt="Yuntao Wang" style="width: 100%; max-width: 300px;" />
+        </div>
+        <div class="speaker-details">
+          <h2><a href="https://pi.cs.tsinghua.edu.cn/lab/people/YuntaoWang/en/">Yuntao Wang</a></h2>
+          <p>Tsinghua University</p>
+          <p><strong>Title</strong>: <b>Enabling Continuous Physiological Sensing on Ubiquitous Devices</b></p>
+          <p style="text-align: justify;"><b>Abstract:</b> Personal health monitoring plays a pivotal role in reflecting lifestyle habits, detecting physical abnormalities, and tracking medical conditions and recovery statuses, thereby offering significant value for overall wellbeing. It is essential for integrating user-friendly and easily accessible healthcare services both inside and outside medical facilities, making it a key research area in human-computer interaction and ubiquitous computing. Traditionally, this field has relied heavily on medical-grade devices to collect physiological data, which are not only costly but also offer limited scalability, thus hindering their widespread use. This presentation will showcase our latest research efforts focused on achieving efficient and continuous physiological sensing with ubiquitous devices. Our goal is to provide new insights and innovative technological approaches within the realm of human-computer interaction for health.</p>
+          <p style="text-align: justify;"><b><strong>Bio</strong>:</b> Yuntao Wang serves as an Associate Professor (Research Track) in the Department of Computer Science and Technology at Tsinghua University in Beijing, China. He is a key member of the Pervasive Interaction Lab, where his research focuses on Human-Computer Interaction (HCI) and Ubiquitous Computing. Dr. Wang specializes on efficient behavioral computing and interaction intention inference on edge devices. He has published more than 70 conference or journal papers including top-tier venues like CHI, IMWUT, UIST and NeurIPS, with seven of these papers earning best paper or honorable mentioned awards. Dr. Wang’s research work has been recognized by the Young Elite Scientists Sponsorship Program by the China Association for Science and Technology (CAST) in 2022, the First Prize of Science and Technology Award of the Chinese Institute of Electronics (CIE) in 2019, the Excellent Innovation Award of the Chinese Association of Artificial Intelligence (CAAI) in 2021. More info <a href="https://pi.cs.tsinghua.edu.cn/lab/people/YuntaoWang/en/">here</a></p>
 
-    </td>
-  </tr>
-
-     <!-- <tr>
-      <td><img src="./assets/images/monica_tentori.png" alt="Monica Tentori" width="1500" /></td>
-      <td><a href="https://scholar.google.com/citations?user=uuzBhRMAAAAJ&hl=de&oi=ao">Monica Tentori</a><br />Center for Scientific Research and Higher Education (CICESE), Ensenada, 
-Mexico
-      <p><b>Title:</b> Neuroscience-based interaction </p>
-      <p><b>Abstract:</b> Recent trends in Ubiquitous Computing are making possible the use of innovative technologies and techniques from Neuroscience to uncover innovative interaction techniques that offer multiple benefits for the collection of data that is relevant to predict and manage health issues. In this talk, I will discuss current challenges and opportunities of Neuroscience-based Interaction in support of the treatment and screening of individuals with neurodevelopmental disorders. I will illustrate its potential through three research projects. The first project showcases how to trick your brain using interactive sonification to make Yoguis feel more flexible. The second project demonstrates that brain-computer video games are effective in supporting neurofeedback training and improving the attention of children with autism. And the third project shows how to uncover digital markers of autism by means of affecting children’s interactions with a haptic device. I will close by discussing research opportunities and the untapped potential of recent breakthroughs in Neuroscience for the development of innovative NUIs designed to support healthcare. </p>
-        <p><b>Bio:</b> Monica Tentori is a full Professor in the Computer Science Department of CICESE where she leads the VeritasResearchLab. Her research interests in ubiquitous computing involve challenges related to AI, sensing and ML, and HCI. Her work has focused primarily on supporting challenges associated to health and urban environments. Her research intersects with ubiquitous computing and HCI. She is the first Latin American woman and the only Mexican who have received the international award “Microsoft Research Faculty Fellowship”. She is the first woman from Ensenada who received the award of distinguished citizen of the city of Ensenada for her work in technological innovation. She is member of the National System of Researchers (SNI) as level II. She is member of the steering committe of ubiquitous computing for both the ACM SIGCHI and ACM SIGMOBILE chapter, and a member of the UC Mexus advisory subcommittee. More info <a href="https://www.monicatentori.com">here</a>.</p>
-      </td>
-
-    </tr>  -->
-
-    <!--
-
-  </tbody>
-</table> -->
-
+        </div>
+      </div>
 
     </main>
   </body>
